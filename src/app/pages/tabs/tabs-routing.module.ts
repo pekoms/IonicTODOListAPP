@@ -14,7 +14,13 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+          },
+          {
+            path: 'agregar',
+            loadChildren: () =>
+              import('../agregar/agregar.module').then(m => m.AgregarPageModule)
           }
+          
         ]
       },
       {
