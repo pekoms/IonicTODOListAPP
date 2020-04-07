@@ -51,6 +51,13 @@ export class AgregarPage implements OnInit {
    }
  }
 
+ borrar(i:number)
+ {
+   this.lista.items.splice( i, 1 );
+   this.deseosService.guardarStorage();
+
+ }
+
  ngOnInit()
  {
 
